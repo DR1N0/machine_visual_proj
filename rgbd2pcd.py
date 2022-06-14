@@ -1,6 +1,6 @@
-import open3d as o3d
 import cv2
 import numpy as np
+import open3d as o3d
 
 if __name__ == '__main__':
     camera_factor = 0.00012498664727900177
@@ -35,5 +35,5 @@ if __name__ == '__main__':
     pcd.points = o3d.utility.Vector3dVector(position)
     pcd.colors = o3d.utility.Vector3dVector(color)
 
-    #o3d.io.write_point_cloud(pcd_name, pcd)
-    #o3d.visualization.draw_geometries([pcd])
+    # o3d.io.write_point_cloud(pcd_name, pcd)
+    # o3d.visualization.draw_geometries([pcd])
